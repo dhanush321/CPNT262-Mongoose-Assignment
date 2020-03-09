@@ -1,1 +1,1 @@
-# CPNT262-Mongoose-Assignment
+# CPNT262-Gallery-Assignment

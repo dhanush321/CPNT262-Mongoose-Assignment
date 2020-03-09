@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+nav {
+    width:100vw;
+    height: 100%;
+    background-image: url('/assets/navbg.jpg');
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:0;
+    height: 100%;
+    
+}
+nav ul li{
+    margin:0ch 6ch 2ch 6ch;
+    padding-right:4em;
+    list-style:none;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top:1em;
+}
+.logo a{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    position:absolute;
+}
+nav li a {
+    text-decoration:none;
+    font-family: Open Sans;
+    color: white;
+
+}
+nav a:hover{
+    color:orange;
+}
+.active {
+    background:rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
+.hero {
+    background-image:url('/assets/bg.jpg'); 
+    width:100vw;
+    height:90vh;
+    background-position:center;
+    background-size: cover;
+}
+.hero h1{
+    padding-top: 200px;
+}
+h1 {
+    margin:auto;
+    font-family: 'Exo', sans-serif;
+    font-size: 4em;
+    color:whitesmoke;
+    text-align: center;
+}
+.about {
+    background-image: url('/assets/aboutbg.jpg');
+    width:100vw;
+    /* height:90vh; */
+}
+.about h1 {
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .15em; 
+}
+p {
+    font-size: 2em;
+    font-family: 'Exo', sans-serif;
+    margin:50px 50px 0 50px;
+    padding-bottom: 7%;
+
+}
+.content {
+    background-image: url('/assets/projectsbg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    /* height: 86.5vh; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+    justify-content: center;  
+    padding-bottom: 300px; 
+}
+.content h1{
+    color: black;
+    font-family: 'Exo', sans-serif;
+    grid-column: 1/-1;
+}     
+.pro {
+    background-color: #e6e2d3;
+    border: 1px solid black;
+    border-radius:5px;
+}
+main{
+    margin-bottom:50px;
+}
+
+figure {
+    display: inline-block;
+    border: 1px solid black;
+}
+figure img {
+    vertical-align: top;
+}
+figcaption {
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+}
+.figcap {
+    text-decoration: none;
+    color: green;
+}
+.imgs {
+    width: 100%;
+}
+img {
+    width:100%;
+}
+.prodes {
+    font-family: 'Exo', sans-serif;
+    padding: 1rem;
+}
+.form {
+    background-image: url('/assets/contactbg.jpg');
+    background-size: cover;
+    width:100vw;
+    padding-bottom: 280px;
+
+}
+.form h1 {
+    color: black;
+    font-family: 'Exo', sans-serif;
+}
+label {
+    font-family: 'Ropa Sans', sans-serif;
+    font-variant: small-caps;
+    color: rgb(104, 46, 46);
+    font-size: 25px;
+    display: flex;
+	width: 50%; 
+    margin:auto;
+}
+input { 
+    display: flex;
+	width: 50%; 
+    margin:auto;
+	border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px; 
+    
+}
+textarea{
+    display: flex;
+	width: 50%; 
+    margin:auto;
+    margin-bottom: 5px;
+	border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    height: 25vh;
+}
+.button {
+    justify-content: center;
+}
+.social {
+    display:flex;
+    padding: .5em;
+    margin:auto;
+    justify-content: center;
+}
+.social i{
+    font-size: 2.5rem;
+     justify-content: space-between;
+}
+footer {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    height: 50px;
+    position:fixed;
+    bottom:0;
+}
