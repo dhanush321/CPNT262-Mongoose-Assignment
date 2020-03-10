@@ -37,7 +37,7 @@ db.once('open', function() {
 
 corsOptions = {
   origin: "https://mongoosesite.herokuapp.com/gallery",
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
 
@@ -70,7 +70,7 @@ app.get('/gallery/:id',function(req, res,next) {
       return console.log(error);
     }
     res.locals.gallery=result;
-    res.render('galleryid',pageInfo.gallery);
+    res.render('galleryid',{title: `${req.params.id}`});
   });
 });
 
