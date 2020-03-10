@@ -6,6 +6,7 @@ const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
 const pageInfo = require('./pageInfo');
 const Image = require('./models/Images.js');
+const cors = require('cors');
 
 const app = express();
 
