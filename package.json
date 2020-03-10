@@ -23,8 +23,11 @@
   "homepage": "https://github.com/dhanush321/CPNT262-Mongoose-Assignment#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "moment": "^2.24.0",
     "mongoose": "^5.9.4",
     "slugify": "^1.4.0"
-  }
+  },
+  "devDependencies": {}
 }
