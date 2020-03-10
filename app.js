@@ -36,7 +36,7 @@ db.once('open', function() {
 });
 
 corsOptions = {
-  origin: "https://mongoosesite.herokuapp.com/",
+  origin: "https://mongoosesite.herokuapp.com/gallery",
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
